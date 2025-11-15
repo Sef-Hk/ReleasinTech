@@ -7,13 +7,32 @@ import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
-
+//new blocks :
+import HeaderHero from './HeaderHeo/component'
+import ReleasinNumber from './ReleasinNumbers/component'
+import Services from './Services/component'
+import { LetsTalk } from './LetsTalk/components'
+import { TechStack } from './TechStack/components'
+import FAQSection from './FAQ/component'
+import HeaderBehind from './HeaderBehind/component'
+import { FounderCompo } from './FounderBlock/component'
+import { OpenPosition } from './OpenPosition/components'
 const blockComponents = {
   archive: ArchiveBlock,
   content: ContentBlock,
   cta: CallToActionBlock,
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
+  //New blocks
+  customBlock:HeaderHero,
+  relnumber:ReleasinNumber,
+  services:Services,
+  letstalk:LetsTalk,
+  tecstack:TechStack,
+  faq:FAQSection,
+  headerbehind:HeaderBehind,
+  founders:FounderCompo,
+  openposition:OpenPosition
 }
 
 export const RenderBlocks: React.FC<{

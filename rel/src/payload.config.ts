@@ -17,6 +17,11 @@ import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { getServerSideURL } from './utilities/getURL'
 
+//NEW COLLECTIONs
+import { OpenPostions } from './collections/OpenPositon'
+import { RequestQuotations } from './collections/RequestQuotation'
+import { JoinRequests } from './collections/JobsRecive'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -64,7 +69,7 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || '',
     },
   }),
-  collections: [Pages, Posts, Media, Categories, Users],
+  collections: [Pages, Posts, Media, Categories, Users, OpenPostions ,RequestQuotations,JoinRequests],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [

@@ -101,3 +101,12 @@ html[data-theme='dark'],
 html[data-theme='light'] {
   opacity: initial;
 }
+
+html, body {
+  font-family: 'Geist', sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span, a, div {
+  font-family: 'Geist', sans-serif;
+}

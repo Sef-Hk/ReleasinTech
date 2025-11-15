@@ -13,6 +13,16 @@ import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
 
+//New Blocks 
+import { CustomBlock } from '@/blocks/HeaderHeo/config'
+import { RelNumber } from '@/blocks/ReleasinNumbers/config'
+import { Services } from '@/blocks/Services/config'
+import { LetsTalk } from '@/blocks/LetsTalk/config'
+import { TechStack } from '@/blocks/TechStack/config'
+import { FAQBlock } from '@/blocks/FAQ/config'
+import { HeaderBehind } from '@/blocks/HeaderBehind/config'
+import { Founders } from '@/blocks/FounderBlock/config'
+import { OpenPosition } from '@/blocks/OpenPosition/config'
 import {
   MetaDescriptionField,
   MetaImageField,
@@ -72,7 +82,17 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
+              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock ,
+                CustomBlock,
+                RelNumber,
+                Services,
+                LetsTalk,
+                TechStack,
+                FAQBlock,
+                HeaderBehind,
+                Founders,
+                OpenPosition,
+              ],
               required: true,
               admin: {
                 initCollapsed: true,
